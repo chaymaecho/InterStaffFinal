@@ -1,0 +1,46 @@
+<resources>
+    <string name="MainOption1">Offre Publié</string>
+    <string name="MainOption2">Recherche d\'emploi</string>
+    <string name="AddVacancyMenu">Ajouter nouveau Offres</string>
+    <string name="PublishedVacancyMenu">Mes offres</string>
+    <string name="WorkersFeedbackMenu">Demandes d\'emploi</string>
+    <string name="Enter">Entrer</string>
+    <string name="LatestJob">Derniers  Offres</string>
+    <string name="JobMenuDescription">Trouvez vos opportunités. Nous publierons des postes vacants</string>
+    <string name="FindJob">Trouver les offres</string>
+    <string name="SentRequests">Demandes envoyées</string>
+    <string name="AcceptedRequests">Demandes acceptées</string>
+    <string name="AddVacancy">Ajoutez les détails de votre poste vacant (Faites défiler vers le bas)</string>
+    <string name="AddUser">Ajouter vos coordonnées</string>
+    <string name="UserName">Nom d\'utilisateur</string>
+    <string name="UserContact">Numero de contact</string>
+    <string name="Organization">Organisation</string>
+    <string name="JobFamily">Domaine d\'emploi</string>
+    <string name="Sort">Chercher l\'offre</string>
+    <string name="clear">Effacer</string>
+    <string name="Category">Catégorie</string>
+    <string name="JobLevel">Niveau de poste</string>
+    <string name="Salary">Salaire</string>
+    <string name="UserEmail">Address Email</string>
+    <string name="UserPassword">Mot de passe</string>
+    <string name="ReUserPassword">Resaisie le mot de passe</string>
+    <string name="JobTitle">Titre du poste</string>
+    <string name="Description">Plus de  Detail</string>
+    <string name="delete_vacancy">Supprimer</string>
+    <string name="update_vacancy">Mettre à jour</string>
+    <string name="send_message">Envoyer un MESSAGE</string>
+    <string name="accepted">ACCEPTEE</string>
+    <string name="apply">Voir plus</string>
+    <string name="SearchVacancy">Choisir Détails</string>
+    <string name="Find">Trouver</string>
+    <string name="Bio">Envoyez-nous des informations vous concernant. Contactez-moi par email.</string>
+    <string name="EnterHere">Entrer ici..</string>
+    <string name="Submit">Soumettre</string>
+    <string name="Login">Connexion</string>
+    <string name="Signin">Se connecter</string>
+    <string name="chooseFile">Choisir une photo de profil</string>
+    <string name="upload">Télécharger</string>
+</resources>
+
+
+

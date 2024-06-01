@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/okay"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Développeur Web"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Contract Type -->
+    <TextView
+        android:id="@+id/contractType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Développeur Web en CDI"
+        android:drawablePadding="8dp"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Location -->
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Montpellier"
+        android:drawableStart="@drawable/it20245092_location"
+        android:drawablePadding="8dp"
+        android:layout_below="@id/contractType"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Employment Type -->
+    <TextView
+        android:id="@+id/employmentType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temps plein"
+        android:drawablePadding="8dp"
+        android:layout_below="@id/location"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Experience -->
+    <TextView
+        android:id="@+id/experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Année d'expérience : 1-2 ans"
+        android:layout_below="@id/employmentType"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Education -->
+    <TextView
+        android:id="@+id/education"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Niveau d'étude : Bac +5"
+        android:layout_below="@id/experience"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Sector -->
+    <TextView
+        android:id="@+id/sector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Secteur d'activité : Informatique software"
+        android:layout_below="@id/education"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Function -->
+    <TextView
+        android:id="@+id/function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fonction : Développement / Programmation"
+        android:layout_below="@id/sector"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Job Details -->
+    <TextView
+        android:id="@+id/postingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15/03/2024"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@id/function"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/jobDetailsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LE POSTE"
+        android:textStyle="bold"
+        android:layout_below="@id/postingDate"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LA DIVISION IT DE PROMAN"
+        android:layout_below="@id/jobDetailsHeader"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/expertise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXPERTISE RECHERCHEE POUR SON CLIENT UN(E) DEVELOPPEUR.NET H/F EN CDI À PARIS"
+        android:layout_below="@id/division"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Missions -->
+    <TextView
+        android:id="@+id/missionsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOS MISSIONS SONT LES SUIVANTES :"
+        android:layout_below="@id/expertise"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/mission1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• DÉFINIR ET ANALYSER LES BESOINS AVEC LES ÉQUIPES / SERVICES DEMANDEURS"
+        android:layout_below="@id/missionsHeader"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/mission2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• PROPOSITION DE SOLUTIONS TECHNIQUES"
+        android:layout_below="@id/mission1"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/mission3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• PARTICIPER À LA RÉDACTION DU CAHIER DES CHARGES ET DES SPÉCIFICATIONS TECHNIQUES"
+        android:layout_below="@id/mission2"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Apply Button -->
+    <Button
+        android:id="@+id/applyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Postuler"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/mission3"/>
+
+</RelativeLayout>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frontend.CandidatsAnonyme.CandidatureSpontaneActivity">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:backgroundTint="#ffffff"
+        tools:ignore="MissingConstraints">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/maintoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:background="@drawable/okay">
+
+
+
+
+
+        <!-- Titre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candidature spontanément"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:hint="Nom"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@android:color/white"
+                        app:counterMaxLength="50"
+                        app:endIconMode="clear_text"
+                        app:helperText="Obligatoir*"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtnom"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="50"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:hint="Prénom"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@android:color/white"
+                        app:counterMaxLength="50"
+                        app:endIconMode="clear_text"
+                        app:helperText="Obligatoir*"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtPrenom"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="50"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@android:color/white"
+                        app:counterMaxLength="50"
+                        app:endIconMode="clear_text"
+                        app:helperText="Obligatoire*"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="50"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:hint="Numéro de téléphone"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@android:color/white"
+                        app:counterMaxLength="50"
+                        app:endIconMode="clear_text"
+                        app:helperText="Obligatoire*"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txttel"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="50"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Critère recherché"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:hint="Métiers cibles"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@android:color/white"
+                        app:counterMaxLength="50"
+                        app:endIconMode="clear_text"
+                        app:helperText="(Optionnel)"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txtmetier"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="50"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:hint="Temps du travail"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@android:color/white"
+                        app:counterMaxLength="50"
+                        app:endIconMode="clear_text"
+                        app:helperText="(Optionnel)"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txttime"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="50"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/etcdi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CDI" />
+
+                    <CheckBox
+                        android:id="@+id/etcdd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CDD" />
+
+                    <CheckBox
+                        android:id="@+id/etalternance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alternance" />
+
+                    <CheckBox
+                        android:id="@+id/etstage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stage" />
+
+                </LinearLayout>
+
+
+                <!-- Bouton pour ajouter un CV -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="CV"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonAjouterCV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/green_100"
+                    android:text="Ajouter un CV"
+                    android:textColor="@color/black"
+                    app:icon="@drawable/addcv" />
+
+                <!-- Champ de texte pour afficher le nom du CV sélectionné -->
+                <TextView
+                    android:id="@+id/textViewNomCV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Aucun CV sélectionné" />
+
+
+                <!-- Champ de saisie pour la lettre de motivation (optionnel) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Lettre de motivation"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextLettreMotivation"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="start|top"
+                    android:hint="Entrez votre lettre de motivation (optionnel)"
+                    android:maxLines="5" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <!-- Bouton pour soumettre la candidature -->
+        <Button
+            android:id="@+id/buttonSoumettre"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            app:icon="@drawable/send_120237"
+            android:backgroundTint="@color/green_100"
+            android:textColor="@color/black"
+            android:text="Envoyer" />
+
+        <Button
+            android:id="@+id/buttonannuler"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/_24pxh"
+            app:icon="@drawable/ic_baseline_close_24"
+            android:backgroundTint="@color/green_100"
+            android:textColor="@color/black" android:text="Annuler" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

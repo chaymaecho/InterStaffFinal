@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <application
+
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjetMobile"
+        tools:targetApi="31">
+
+
+        <!--        <activity-->
+        <!--            android:name=".frontend.it20224370.IT20224370_EditProfile"-->
+        <!--            android:exported="true" />-->
+        <!--        <activity-->
+        <!--            android:name=".frontend.it20224370.It20224370_UpdateRequests" android:parentActivityName=".IT20224370_MyRequests"-->
+        <!--            android:exported="true" />-->
+
+        <activity
+            android:name="com.example.interimeprojet.frontend.Employee.FormulaireEmployer"
+            android:exported="true" />
+        <activity
+            android:name="com.example.interimeprojet.frontend.Main_appli"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.interimeprojet.frontend.Employee.EmployerLogin"
+            android:exported="true" >
+        </activity>
+
+        <activity
+            android:name="com.example.interimeprojet.frontend.Employee.Profill"
+            android:exported="true" />
+        <activity
+            android:name="com.example.interimeprojet.frontend.Employee.Employer_AjoutOffre"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.interimeprojet.frontend.DashBoard"
+            android:exported="true" />
+        <activity
+            android:name="com.example.interimeprojet.frontend.Employee.PopOffreEmployer"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.popMe" />
+        <activity
+            android:name="com.example.interimeprojet.frontend.Employee.EmployerDernierOffre"
+            android:exported="true" />
+        <activity
+            android:name="com.example.interimeprojet.frontend.Employee.PublierOffre"
+            android:exported="true" />
+
+
+        <activity
+            android:name="com.example.interimeprojet.frontend.Employee.MenuOffre"
+            android:exported="true"
+            android:parentActivityName="com.example.interimeprojet.frontend.DashBoard" />
+        <activity
+            android:name="com.example.interimeprojet.frontend.MainMenu"
+            android:exported="true"
+            android:label="Dashboard" />
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.AccueilCandidatActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.CandidaterActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"
+            tools:ignore="MissingClass"/>
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.Candidat_LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.ProfileeCandida"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.GestionCandidatureActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.CandidatureAcueilActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.InterfanceCandidatureSpontaneActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.CandidatureSpontaneActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.EmplolisteActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"
+            tools:ignore="MissingClass"/>
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.NotificationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.Lire"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.VoirPlusCa"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.OffreActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"
+            tools:ignore="MissingClass"/>
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.PostulerActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"
+            tools:ignore="MissingClass"/>
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.RechercheaActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"
+            tools:ignore="MissingClass"/>
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.SaveoffreActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"
+            tools:ignore="MissingClass"/>
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.AccepteCandidatureActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.CandidatureAllActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.CandidatureFilterActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.CandidatureRefuserActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ProjetMobile"/>
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.CandidatNonTrait"
+            android:exported="true"/>
+
+        <activity
+            android:name="com.example.interimeprojet.frontend.CandidatsAnonyme.CandidaTureRefuser"
+            android:exported="true"/>
+
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+
+</manifest>

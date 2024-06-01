@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "815543880534",
+    "firebase_url": "https://interimeprojet-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "interimeprojet",
+    "storage_bucket": "interimeprojet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815543880534:android:29ee82dbae0284ea6da4f7",
+        "android_client_info": {
+          "package_name": "com.example.interimeprojet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyniST5PXAm2H7xKamt_1n1f_-sfHzck4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
